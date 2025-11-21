@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bunx astro add:*)",
+      "Bash(bunx:*)",
+      "Bash(bun add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Capivolei Barcelona",
+  "welcome": "¡Bienvenido a Capivolei Barcelona!",
+  "description": "Comunidad de voleibol de Barcelona",
+  "guidelines": {
+    "title": "Directrices de la Comunidad",
+    "intro": "Por favor, lee y acepta las siguientes directrices antes de unirte al grupo:",
+    "placeholder": "Las directrices se añadirán aquí..."
+  },
+  "agreement": {
+    "label": "He leído y acepto las directrices de la comunidad",
+    "required": "Debes aceptar las directrices para continuar"
+  },
+  "whatsapp": {
+    "button": "Unirse al Grupo de WhatsApp",
+    "description": "Haz clic abajo para unirte a nuestro grupo de WhatsApp"
+  },
+  "language": {
+    "select": "Seleccionar idioma"
+  }
+}

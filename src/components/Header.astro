@@ -1,0 +1,62 @@
+---
+const scrolled = false;
+let language = "pt";
+---
+
+<header
+  class={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex justify-center ${
+    scrolled ? "py-2" : "py-4"
+  }`}
+>
+  <div
+    class={`
+        bg-white border-2 border-slate-900 transition-all duration-300
+        mx-4 px-4 py-3 rounded-2xl flex items-center justify-between w-full max-w-5xl
+        ${scrolled ? "shadow-hard-sm" : "shadow-hard"}
+      `}
+  >
+    {/* Logo */}
+    <div
+      class="flex items-center gap-3 cursor-pointer select-none"
+      onclick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      <div
+        class="w-10 h-10 bg-brand-500 border-2 border-slate-900 rounded-lg flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      >
+        <span class="text-2xl" role="img" aria-label="Capybara">🐹</span>
+      </div>
+      <div class="flex flex-col">
+        <span
+          class="font-display font-bold text-xl tracking-tight text-slate-900 leading-none"
+        >
+          Volley<span class="text-brand-600">United</span>
+        </span>
+      </div>
+    </div>
+
+    {/* Language Toggle */}
+    <div
+      class="flex items-center bg-slate-100 border-2 border-slate-900 rounded-lg p-1 gap-1"
+    >
+      <button
+        class={`px-3 py-1 text-xs font-bold rounded-md transition-all border-2 ${
+          language === "pt"
+            ? "bg-accent-400 text-slate-900 border-slate-900 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]"
+            : "bg-transparent text-slate-500 border-transparent hover:text-slate-900"
+        }`}
+      >
+        PT
+      </button>
+      <div class="w-px h-4 bg-slate-300 mx-1"></div>
+      <button
+        class={`px-3 py-1 text-xs font-bold rounded-md transition-all border-2 ${
+          language === "es"
+            ? "bg-accent-400 text-slate-900 border-slate-900 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]"
+            : "bg-transparent text-slate-500 border-transparent hover:text-slate-900"
+        }`}
+      >
+        ES
+      </button>
+    </div>
+  </div>
+</header>
