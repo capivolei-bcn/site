@@ -1,4 +1,6 @@
 ---
+import CapybaraImg from "./capybara-img.astro";
+
 const content = {
   mission:
     "Nossa missão é unir apaixonados por vôlei, promovendo um ambiente inclusivo e divertido para todos os níveis de habilidade.",
@@ -9,10 +11,10 @@ const content = {
 <footer class="bg-white border-t-2 border-slate-900 py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="mb-6 flex justify-center items-center gap-2">
-      <span class="text-3xl" role="img" aria-label="Capybara">🐹</span>
-      <h4 class="font-display font-bold text-2xl text-slate-900">
-        Volley<span class="text-brand-600">United</span>
-      </h4>
+      <span class="text-3xl" role="img" aria-label="Capybara">
+        <CapybaraImg />
+      </span>
+      <h4 class="font-display font-bold text-2xl text-slate-900">Capivolei</h4>
     </div>
 
     <p class="text-slate-600 font-medium text-lg max-w-md mx-auto mb-8">
