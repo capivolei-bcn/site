@@ -11,13 +11,10 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   i18n: {
-    defaultLocale: "pt-br",
-    locales: ["es", "pt-br"],
-    routing: {
-      prefixDefaultLocale: true,
-    },
+    defaultLocale: "pt",
+    locales: ["es", "pt"],
     fallback: {
-      es: "pt-br",
+      es: "pt",
     },
   },
 });
